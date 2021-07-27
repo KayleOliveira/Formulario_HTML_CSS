@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+    color: floralwhite;
+}
+
+
+/*   CONTAINER PARA ALINHAR O FORMULÁRIO   */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+/*   TEMPLATE DO FORMULÁRIO   */
+.formulario{
+    transform: translate(0, 50%);
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px;
+    border-radius: 10px;
+}
+fieldset{
+    border: 3px solid dodgerblue;
+    border-radius: 10px ;
+}
+legend{
+    border: 1px solid dodgerblue;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+/*   IMPUTS   */
+.input{
+    position: relative;
+}
+.inputBox{
+    background: none;
+    border: none;
+    border-bottom: 1px solid floralwhite;
+    outline: none;
+    color: floralwhite;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputBox:focus ~ .labelInput,
+.inputBox:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#date{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+.inputCheckbox{
+    border: none;
+}
+
+
+
+/*   AREA DE TEXTO   */
+#describe{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    resize: none;
+}
+
+
+
+/*   BOTÃO DE SUBMIT   */
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: floralwhite;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgba(19, 102, 141, .8);
+}
+

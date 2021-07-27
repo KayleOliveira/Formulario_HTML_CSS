@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- CONTAINER DE ALINHAMENTO -->
+
+        <div class="formulario">
+            <!-- FORMULÁRIO -->
+            <fieldset>
+                <legend><b>Formulário</b></legend>
+                <br>
+
+                <!-- INPUTS DE NOME, EMAIL E TELEFONE -->
+                <div class="input">
+                    <input type="text" name="name" id="name" class="inputBox" required>
+                    <label for="name" class="labelInput">Complete Name</label>
+                </div>
+                <br><br>
+                <div class="input">
+                    <input type="email" name="email" id="email" class="inputBox" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="input">
+                    <input type="tel" name="telefone" id="telefone" class="inputBox" required>
+                    <label for="telefone" class="labelInput">Telephone</label>
+                </div>
+
+                <!-- INPUT DE GÊNERO "TYPE RADIO" -->
+                <p>Genre:</p>
+                <div class="inputGenre">
+                    <label>
+                        <input type="radio" name="famale" id="female" required>Female
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="male" id="male" required>Male
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="other" id="other" required>Other
+                    </label>
+                </div>
+                <br><br>
+
+                <!-- INPUT DE DATA "TYPE DATE" -->
+                <label for="date"><b>Birth Date:</b></label>
+                <input type="date" id="date" required>
+                <br><br><br>
+                <div class="input">
+                    <input type="text" name="address" id="address" class="inputBox" required>
+                    <label for="address" class="labelInput">Address</label>
+                </div>
+                <br><br>
+                <div class="input">
+                    <input type="text" name="postCode" id="postCode" class="inputBox" required>
+                    <label for="postCode" class="labelInput">Post Code</label>
+                </div>
+                <br><br>
+
+                <!-- INPUT DE PAÍS "SELECT OPTIONS" -->
+                <div class="input">
+                    <label>Country:
+                        <select name="country" id="country" class="inputBox">
+                            <option value="brazil">Brazil</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </label>
+                </div>
+                <br><br>
+
+                <!-- INPUTS DE IDIOMAS "TYPE CHECKBOX" -->
+                <div class="check">
+                    <label><b>Check the languages you speak:</b></label>
+                    <br><br>
+                    <input type="checkbox" name="english" id="english" value="english" class="inputCheckbox">
+                    <label for="english">English</label>
+                    <br>
+                    <input type="checkbox" name="french" id="french" value="French" class="inputCheckbox">
+                    <label for="french">French</label>
+                    <br>
+                    <input type="checkbox" name="portuguese" id="portuguese" value="portuguese" class="inputCheckbox">
+                    <label for="portuguese">Portuguese</label>
+                    <br>
+                    <input type="checkbox" name="italian" id="italian" value="italian" class="inputCheckbox">
+                    <label for="italian">Italian</label>
+                    <br>
+                    <input type="checkbox" name="mandarin" id="mandarin" value="mandarin" class="inputCheckbox">
+                    <label for="mandarin">Mandarin</label>
+                    <br>
+                    <input type="checkbox" name="japanese" id="japanese" value="japanese" class="inputCheckbox">
+                    <label for="japanese">Japanese</label>
+                    <br>
+                    <input type="checkbox" name="korean" id="korean" value="korean" class="inputCheckbox">
+                    <label for="korean">Korean</label>
+                    <br>
+                    <input type="checkbox" name="spanish" id="spanish" value="spanish" class="inputCheckbox">
+                    <label for="spanish">Spanish</label>
+                    <br>
+                    <input type="checkbox" name="hebrew" id="hebrew" value="hebrew" class="inputCheckbox">
+                    <label for="hebrew">Hebrew</label>
+                    <br>
+                    <input type="checkbox" name="arabic" id="arabic" value="arabic" class="inputCheckbox">
+                    <label for="arabic">Arabic</label>
+                </div>
+                <br>
+
+                <!-- INPUT DE ÁREA DE TEXTO "TEXTAREA" -->
+                <div class="description">
+                    <label><b>Describe your expirence:</b></label>
+                    <br><br>
+                    <textarea name="describe" id="describe" cols="100%" rows="5"></textarea>
+                </div>
+                <br>
+
+                <!-- BOTÃO DE SUBMIT -->
+                <div class="submitButton">
+                    <input type="submit" id="submit">
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
